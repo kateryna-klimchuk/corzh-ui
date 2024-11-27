@@ -1,1 +1,1 @@
-{"v":5,"entries":{"components-btn--default":{"type":"story","id":"components-btn--default","name":"Default","title":"Components/Btn","importPath":"./src/components/Button/Button.stories.tsx","componentPath":"./src/components/Button/Button.tsx","tags":["dev","test"]}}}
+{"v":5,"entries":{"components-button--basic":{"type":"story","id":"components-button--basic","name":"Basic","title":"Components/Button","importPath":"./src/components/Button/Button.stories.tsx","componentPath":"./src/components/Button/Button.tsx","tags":["dev","test"]}}}
