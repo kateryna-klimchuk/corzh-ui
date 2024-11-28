@@ -1,4 +1,4 @@
-export type ButtonColorType = "red" | "white" | "blue";
+export type ButtonColorType = "red" | "white" | "blue" | "green";
 export type ButtonSizeType = "small" | "medium" | "large";
 export interface ButtonInterface {
   size: ButtonSizeType;
@@ -14,6 +14,7 @@ export const Button: React.FunctionComponent<ButtonInterface> = ({
     red: "bg-red-500 text-white",
     white: "bg-white text-black border border-gray-300 hover:bg-gray-100",
     blue: "bg-blue-500 text-white",
+    green: "bg-green-300 text-black",
   };
 
   const sizeClasses: Record<ButtonSizeType, string> = {
