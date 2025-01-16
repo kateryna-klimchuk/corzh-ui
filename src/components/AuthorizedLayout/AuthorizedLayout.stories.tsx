@@ -1,8 +1,7 @@
+import { MockLink } from "../../Utilities/MockLink/MockLink";
 import type { Meta, StoryObj } from "@storybook/react";
 import { AuthorizedLayout } from "./AuthorizedLayout";
-import { AuthorizedLayoutBody } from "./AuthorizedLayoutBody/AuthorizedLayoutBody";
 import { AuthorizedLayoutHeader } from "./AuthorizedLayoutHeader/AuthorizedLayoutHeader";
-import { AuthorizedLayoutRoot } from "./AuthorizedLayoutRoot/AuthorizedLayoutRoot";
 
 const meta: Meta<typeof AuthorizedLayoutHeader> = {
   title: "Components/AuthorizedLayout",
@@ -13,12 +12,42 @@ export default meta;
 
 type Story = StoryObj<typeof AuthorizedLayoutHeader>;
 
+const navigationItems = [
+  {
+    label: "Home",
+    href: "#",
+  },
+  {
+    label: "Companies",
+    isActive: true,
+    href: "#",
+  },
+  {
+    label: "Persons",
+    href: "#",
+  },
+  {
+    label: "About us",
+    href: "#",
+  },
+  {
+    label: "Contacts",
+    href: "#",
+  },
+];
+
 export const Basic: Story = {
-  //   args: {},
+  args: {
+    navigationItems: navigationItems,
+    LinkComponent: MockLink,
+  },
   render: (args) => (
     <>
       <AuthorizedLayout.Root>
-        <AuthorizedLayout.Header />
+        <AuthorizedLayout.Header
+          navigationItems={args.navigationItems}
+          LinkComponent={args.LinkComponent}
+        />
         <AuthorizedLayout.Body>
           <div className="p-4 text-lg">
             <h2 className="text-2xl font-bold text-orange-600">
