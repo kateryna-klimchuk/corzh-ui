@@ -11,7 +11,7 @@ export const ModeDecorator = (Story: any) => {
 
   return (
     <>
-      <button
+      {/* <button
         onClick={toggleMode}
         style={{
           position: "fixed",
@@ -26,7 +26,7 @@ export const ModeDecorator = (Story: any) => {
         }}
       >
         {isDarkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+      </button> */}
       <Story />
     </>
   );

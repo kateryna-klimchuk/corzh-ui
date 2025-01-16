@@ -1,4 +1,9 @@
-export type ButtonColorType = "red" | "white" | "blue" | "green";
+export type ButtonColorType =
+  | "red"
+  | "white"
+  | "blue"
+  | "green"
+  | "transparent";
 export type ButtonSizeType = "small" | "medium" | "large";
 export interface ButtonInterface {
   size?: ButtonSizeType;
@@ -12,9 +17,11 @@ export const Button: React.FunctionComponent<ButtonInterface> = ({
 }) => {
   const colorClasses: Record<ButtonColorType, string> = {
     red: "bg-red-500 text-white",
-    white: "bg-white text-black border border-gray-300 hover:bg-gray-100",
+    white: "bg-white text-slate-600 border border-gray-300 hover:bg-gray-100",
     blue: "bg-blue-500 text-white",
-    green: "bg-green-300 text-black",
+    green: "bg-green-300 text-slate-600",
+    transparent:
+      "text-slate-600 border border-gray-300 hover:bg-orange-200 text-lg",
   };
 
   const sizeClasses: Record<ButtonSizeType, string> = {
@@ -24,7 +31,7 @@ export const Button: React.FunctionComponent<ButtonInterface> = ({
   };
   return (
     <button
-      className={`rounded ${colorClasses[color]} ${sizeClasses[size]} hover:opacity-90 transition-all`}
+      className={`rounded ${colorClasses[color]} ${sizeClasses[size]} hover:opacity-90 transition-all cursor-pointer`}
     >
       {label}
     </button>

@@ -4,5 +4,5 @@ export interface AuthorizedLayoutBodyInterface {
 export const AuthorizedLayoutBody: React.FunctionComponent<
   AuthorizedLayoutBodyInterface
 > = ({ children }) => {
-  return <></>;
+  return <main className="flex-1 flex flex-col px-6 py-4">{children}</main>;
 };
