@@ -1,62 +1,26 @@
-# Storybook Tailwind Shadcn Template
+Corzh UI
 
-This project is a starter template that integrates Storybook, Tailwind CSS, and Shadcn to help developers quickly get started with building component libraries and design systems for modern web applications.
+Corzh UI is a modern and flexible React component library designed to accelerate UI development with reusable, customizable, and accessible components. Built with TypeScript and Tailwind CSS, it is the perfect choice for developers who value clean design and seamless integration.
 
-## Key Features
+Features
+🌟 Reusable Components: Save time with a library of prebuilt, customizable components.
+🎨 Tailwind CSS: Style components effortlessly with utility-first classes.
+🔒 TypeScript Support: Enjoy type safety and robust autocompletion in your projects.
+🌐 Framework Agnostic: Works seamlessly with any React framework, including Remix, Next.js, and Create React App.
 
-- Storybook: An isolated environment to build, document, and test UI components.
-- Tailwind CSS: A utility-first CSS framework for creating custom designs without leaving your HTML.
-- Shadcn: A modern UI component library integrated with Tailwind CSS, offering reusable and customizable components.
+Installation
+To install Corzh UI in your project, use your favorite package manager:
 
-## Prerequisites
+bash
 
-Before getting started, ensure you have the following installed:
+# With npm
 
-Node.js: >= 16.x
-npm: >= 7.x
-Quick Start
-Clone the Repository:
+npm install corzh-ui
 
-```bash
-git clone https://github.com/your-username/storybook-tailwind-shadcn-template.git
-cd storybook-tailwind-shadcn-template
-```
+# With Yarn
 
-## Install Dependencies:
+yarn add corzh-ui
 
-```bash
+# With pnpm
 
-npm install
-Run Storybook:
-```
-
-run storybook
-
-```bash
-npm run storybook
-```
-
-## Start Development:
-
-Begin developing your components in the src/components directory.
-
-### Build for Production:
-
-```bash
-npm run build
-```
-
-## Folder Structure
-
-- .storybook/: Storybook configuration files.
-- src/: Main source code folder containing components, styles, and utilities.
-- tailwind.config.js: Tailwind CSS configuration for customizing themes and utilities.
-
-## Customization
-
-- Tailwind CSS: Modify the tailwind.config.js file to extend styles and themes.
-- Shadcn Components: Use Shadcn UI components or add your own custom components within src/components.
-
-## License
-
-This project is licensed under the MIT License.
+pnpm add corzh-ui
