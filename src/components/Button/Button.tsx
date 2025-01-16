@@ -8,7 +8,7 @@ export type ButtonSizeType = "small" | "medium" | "large";
 export interface ButtonInterface {
   size?: ButtonSizeType;
   color?: ButtonColorType;
-  label?: string;
+  label?: string | React.ReactNode;
 }
 export const Button: React.FunctionComponent<ButtonInterface> = ({
   size = "small",
