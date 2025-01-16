@@ -4,12 +4,18 @@ import React from "react";
 import { Icon as Icons } from "./Icon";
 import { IconType } from "./IconType";
 
-export default {
+const meta: Meta<typeof Icons> = {
   title: "Assets/Icon",
   component: Icons.DownArrow,
-} as Meta<React.FunctionComponent<IconType>>;
+} as Meta;
 
-export const States: StoryFn<React.FunctionComponent<IconType>> = (args) => (
+export default meta;
+
+type Story = StoryFn<React.FunctionComponent<IconType>>;
+
+export const Basic: Story = (
+  args: React.JSX.IntrinsicAttributes & IconType
+) => (
   <StoryWrapper title="Icons">
     <div className="grid gap-8 grid-cols-3 sm:grid-cols-5 lg:grid-cols-8 mt-4 mx-4">
       {Object.entries(Icons).map(([iconName, Icon], index) => (
@@ -22,9 +28,6 @@ export const States: StoryFn<React.FunctionComponent<IconType>> = (args) => (
   </StoryWrapper>
 );
 
-States.parameters = {
-  options: { showPanel: false },
-};
-States.args = {
+Basic.args = {
   className: "h-6 w-6",
 };
