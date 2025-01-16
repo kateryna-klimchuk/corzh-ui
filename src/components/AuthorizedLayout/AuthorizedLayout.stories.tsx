@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { AuthorizedLayout } from "./AuthorizedLayout";
 import { AuthorizedLayoutBody } from "./AuthorizedLayoutBody/AuthorizedLayoutBody";
 import { AuthorizedLayoutHeader } from "./AuthorizedLayoutHeader/AuthorizedLayoutHeader";
 import { AuthorizedLayoutRoot } from "./AuthorizedLayoutRoot/AuthorizedLayoutRoot";
@@ -16,9 +17,9 @@ export const Basic: Story = {
   //   args: {},
   render: (args) => (
     <>
-      <AuthorizedLayoutRoot>
-        <AuthorizedLayoutHeader />
-        <AuthorizedLayoutBody>
+      <AuthorizedLayout.Root>
+        <AuthorizedLayout.Header />
+        <AuthorizedLayout.Body>
           <div className="p-4 text-lg">
             <h2 className="text-2xl font-bold text-orange-600">
               Welcome to CorzhUI
@@ -33,8 +34,8 @@ export const Basic: Story = {
               <li>Streamline your development workflow</li>
             </ul>
           </div>
-        </AuthorizedLayoutBody>
-      </AuthorizedLayoutRoot>
+        </AuthorizedLayout.Body>
+      </AuthorizedLayout.Root>
     </>
   ),
 };
