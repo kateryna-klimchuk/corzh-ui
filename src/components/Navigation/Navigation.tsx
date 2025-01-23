@@ -26,14 +26,14 @@ export const Navigation: React.FunctionComponent<NavigationInterface> = ({
               <>
                 {item.isActive ? (
                   <LinkComponent
-                    className="bg-orange-200 px-2 border rounded cursor-pointer"
+                    className="bg-orange-200 px-2 rounded cursor-pointer"
                     to={item.href}
                   >
                     {item.label}
                   </LinkComponent>
                 ) : (
                   <LinkComponent
-                    className="px-2 rounded border hover:bg-orange-200 cursor-pointer transition-all"
+                    className="px-2 rounded hover:bg-orange-200 cursor-pointer transition-all"
                     to={item.href}
                   >
                     {item.label}

@@ -20,8 +20,7 @@ export const Button: React.FunctionComponent<ButtonInterface> = ({
     white: "bg-white text-slate-600 border border-gray-300 hover:bg-gray-100",
     blue: "bg-blue-500 text-white",
     green: "bg-green-300 text-slate-600",
-    transparent:
-      "text-slate-600 border border-gray-300 hover:bg-orange-200 text-lg",
+    transparent: "text-slate-600 hover:bg-orange-200 text-lg",
   };
 
   const sizeClasses: Record<ButtonSizeType, string> = {
