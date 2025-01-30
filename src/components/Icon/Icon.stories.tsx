@@ -1,6 +1,5 @@
 import { StoryWrapper } from "../../Utilities/StoryWrapper/StoryWrapper";
 import { Meta, StoryFn } from "@storybook/react";
-import React from "react";
 import { Icon as Icons } from "./Icon";
 import { IconType } from "./IconType";
 
